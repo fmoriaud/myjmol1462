@@ -171,6 +171,7 @@ public class Viewer extends JmolViewer implements AtomDataServer,
     PlatformViewer {
 
   public boolean testAsync;// = true; // testing only
+  public boolean hydrogenAdded = false;
 
   static {
     /**
@@ -8490,7 +8491,7 @@ public class Viewer extends JmolViewer implements AtomDataServer,
                        boolean isLoad2D) throws Exception {
 
     // We only work on atoms that are in frame
-
+    hydrogenAdded = false;
     String ff = g.forceField;
     BS bsInFrame = getFrameAtoms();
 
@@ -8547,6 +8548,7 @@ public class Viewer extends JmolViewer implements AtomDataServer,
       if (!isJS)
         e.printStackTrace();
     }
+    hydrogenAdded = true;
   }
 
   public void setMotionFixedAtoms(BS bs) {
