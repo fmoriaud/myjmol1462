@@ -31,6 +31,7 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.jmol.java.BS;
+import org.jmol.minimize.Minimizer;
 import org.jmol.util.BoxInfo;
 
 import javajs.api.GenericPlatform;
@@ -125,7 +126,8 @@ abstract public class JmolViewer {
   abstract public float getFloat(int tok);
   abstract public int getInt(int tok);
   abstract public boolean getBoolean(int tok);
-
+  abstract public boolean areHydrogenAdded();
+  abstract public Minimizer getMinimizer(boolean createNew);
   //abstract public int getAnimationFps();  see getInt(T.animationFps)
   //abstract public boolean getShowHydrogens(); see getBoolean(T.showhydrogens)
   //abstract public boolean getShowMeasurements(); see getBoolean(T.showmeasurements)
