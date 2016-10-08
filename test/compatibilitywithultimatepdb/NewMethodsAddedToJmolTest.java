@@ -15,8 +15,14 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by Fabrice on 08/10/16.
  */
-public class AddHydrogensTest {
+public class NewMethodsAddedToJmolTest {
 
+    /**
+     * This test protonates a structure in the viewer
+     * It uses the two methods that were introduced in Jmol in this project:
+     * minimizer.getMinimizationEnergy()
+     * viewer.areHydrogenAdded()
+     */
     @Test
     public void testAreHydrogenAdded() {
 
@@ -104,7 +110,6 @@ public class AddHydrogensTest {
         Float energy = waitMinimizationEnergyAvailable(2, ultiJMol);
         return energy;
     }
-
 
 
     private Float waitMinimizationEnergyAvailable(int waitTimeSeconds, UltiJmol1462 ultiJMol) {
