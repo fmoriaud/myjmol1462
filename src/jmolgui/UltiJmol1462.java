@@ -1,13 +1,32 @@
-package ultimatepdb;
+/*
+ *                    BioJava development code
+ *
+ * This code may be freely distributed and modified under the
+ * terms of the GNU Lesser General Public Licence.  This should
+ * be distributed with the code.  If you do not have a copy,
+ * see:
+ *
+ *      http://www.gnu.org/copyleft/lesser.html
+ *
+ * Copyright for this code is held jointly by the individual
+ * authors.  These should be listed in @author doc comments.
+ *
+ * For more information on the BioJava project and its aims,
+ * or to join the biojava-l mailing list, visit the home page
+ * at:
+ *
+ *      http://www.biojava.org/
+ *
+ * Created on 24.05.2004
+ * @author Andreas Prlic
+ * @author Fabrice Moriaud for minor modification
+ */
 
-import org.openscience.jmol.app.JmolApp;
-import org.openscience.jmol.app.jmolpanel.Splash;
+package jmolgui;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Hashtable;
-import java.util.Map;
 
 /**
  * Created by Fabrice.Moriaud on 08.09.2016.

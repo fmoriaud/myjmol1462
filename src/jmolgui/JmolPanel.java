@@ -22,7 +22,7 @@
  *
  */
 
-package ultimatepdb;
+package jmolgui;
 
 
 import org.jmol.adapter.smarter.SmarterJmolAdapter;
@@ -216,10 +216,6 @@ implements ActionListener
 		}
 		evalString("restore selection; ");
 	}
-
-
-
-
 
 
 

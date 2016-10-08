@@ -19,7 +19,7 @@
  *
  * created at Oct 27, 2007
  */
-package ultimatepdb;
+package jmolgui;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -149,9 +149,5 @@ MouseListener {
 			String txt = history.get(historyPosition);
 			textfield.setText(txt);
 		}
-
-
 	}
-
-
 }

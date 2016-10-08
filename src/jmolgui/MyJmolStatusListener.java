@@ -22,7 +22,7 @@
  *
  */
 
-package ultimatepdb;
+package jmolgui;
 
 import org.jmol.api.JmolStatusListener;
 import org.jmol.c.CBK;

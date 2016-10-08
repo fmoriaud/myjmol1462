@@ -22,7 +22,7 @@
  *
  */
 
-package ultimatepdb;
+package jmolgui;
 
 import javax.swing.*;
 import java.awt.*;
