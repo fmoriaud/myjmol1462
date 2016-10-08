@@ -32,7 +32,7 @@ public class OpenJmolTest {
         String filecontent = "";
         try {
             Path path = Paths.get(url.toURI());
-            filecontent = readFile(path.toString());
+            filecontent = ToolsTest.readFile(path.toString());
         } catch (URISyntaxException | IOException e1) {
             assertTrue(false);
         }
@@ -48,28 +48,11 @@ public class OpenJmolTest {
 
         }
 
+
+
+
         String data = ultiJmol1462.jmolPanel.getViewer().getData("*", "V3000");
         assertTrue(data.contains("M  V30 COUNTS 2798 2863 0 0 0"));
-    }
-
-
-
-    private String readFile(String file) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(file));
-        String         line = null;
-        StringBuilder  stringBuilder = new StringBuilder();
-        String         ls = System.getProperty("line.separator");
-
-        try {
-            while((line = reader.readLine()) != null) {
-                stringBuilder.append(line);
-                stringBuilder.append(ls);
-            }
-
-            return stringBuilder.toString();
-        } finally {
-            reader.close();
-        }
     }
 
 }
