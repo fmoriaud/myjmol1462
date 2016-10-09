@@ -90,11 +90,6 @@ public class NewMethodsAddedToJmolTest {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-/*
-        if (script.contains("minimize")) {
-            scriptIsMinimizing = true;
-        }
-*/
 
         String script = getScriptMinimizationLigandInTarget();
 
@@ -121,19 +116,13 @@ public class NewMethodsAddedToJmolTest {
 
             System.out.println("currentEnergy = " + currentEnergy);
 
-            // when too high then I should give up
-            if (currentEnergy > 1E8) {
-                //System.out.println("Minimization is aborted as energy is > 1E8 ");
-                //return null;
-            }
-
             if (Math.abs(currentEnergy - energy) < 5.0) {
                 goAhead = false;
             }
             energy = currentEnergy;
         }
 
-        //System.out.println("did " + countIteration + " iterations");
+        System.out.println("did " + countIteration + " iterations");
         try {
             Thread.sleep(1000L);
         } catch (InterruptedException e) {
@@ -163,21 +152,9 @@ public class NewMethodsAddedToJmolTest {
         }
 
         System.out.println("convergence reached " + convergenceReached);
-        //results.put("final energy", energy);
-
-
-        // ?????????????????
-        //ultiJmol.jmolPanel.evalString("minimize energy");
-
-        //System.out.println("final energy = " + finalEnergy);
         System.out.println("final energy = " + finalEnergy);
 
-        String structureV3000 = ultiJmol1462.jmolPanel.getViewer().getData("*", "V3000");
-        //results.put("structureV3000", structureV3000);
-
-        ultiJmol1462.jmolPanel.evalString("minimize clear");
-
-        // do the sperate export of target and ligand when atomCountTarget is not null
+        //String structureV3000 = ultiJmol1462.jmolPanel.getViewer().getData("*", "V3000");
 
         ultiJmol1462.jmolPanel.evalString("minimize clear");
         ultiJmol1462.frame.dispose();
@@ -367,12 +344,6 @@ public class NewMethodsAddedToJmolTest {
             float currentEnergy = getEnergyBiojavaJmolNewCode(ultiJmol1462);
 
             System.out.println("currentEnergy = " + currentEnergy);
-
-            // when too high then I should give up
-            if (currentEnergy > 1E8) {
-                //System.out.println("Minimization is aborted as energy is > 1E8 ");
-                //return null;
-            }
 
             if (Math.abs(currentEnergy - energy) < 5.0) {
                 goAhead = false;
