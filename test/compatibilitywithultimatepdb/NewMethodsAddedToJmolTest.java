@@ -38,9 +38,6 @@ import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 
-/**
- * Created by Fabrice on 08/10/16.
- */
 public class NewMethodsAddedToJmolTest {
 
     // -------------------------------------------------------------------

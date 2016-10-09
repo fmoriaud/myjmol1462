@@ -27,9 +27,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
- * Created by Fabrice on 08/10/16.
- */
 public class ToolsTest {
 
     /**

@@ -34,10 +34,6 @@ import java.nio.file.Paths;
 
 import static org.junit.Assert.assertTrue;
 
-/**
- * Created by Fabrice on 10/09/16.
- */
-
 
 public class OpenJmolTest {
     // -------------------------------------------------------------------
