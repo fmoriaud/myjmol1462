@@ -13,7 +13,7 @@ Code is from Jmol (GNU Lesser General Public License) and Biojava (GNU Lesser Ge
 There are modifications in the Jmol code which are documented in the commits in this github project.
 
 A test package is provided, showing how to programatically add Hydrogens and minimize a ligand within its target.
-Tests are released with the GNU Lesser General Public License.
+Tests are released with the GNU Lesser General Public License version 3.
 
 Run the project:
 
