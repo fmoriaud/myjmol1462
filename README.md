@@ -12,7 +12,7 @@ License
 Code is from Jmol (GNU Lesser General Public License) and Biojava (GNU Lesser General Public Licence).
 There are modifications in the Jmol code which are documented in the commits in this github project.
 
-A test package is provided, showing how to programatically with Java can be used to add Hydrogens and to minimize a structure.
+A test package is provided, showing how to programatically add Hydrogens and minimize a ligand within its target.
 Tests are released with the GNU Lesser General Public License.
 
 
