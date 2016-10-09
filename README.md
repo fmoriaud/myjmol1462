@@ -7,12 +7,16 @@ Junit tests covers the usage of the new methods added to Jmol in this project. T
 Contributors
 Fabrice Moriaud
 
-License
+License:
 
 Code is from Jmol (GNU Lesser General Public License) and Biojava (GNU Lesser General Public Licence).
 There are modifications in the Jmol code which are documented in the commits in this github project.
 
 A test package is provided, showing how to programatically add Hydrogens and minimize a ligand within its target.
 Tests are released with the GNU Lesser General Public License.
+
+Run the project:
+
+Checkout the project from github and using IntelliJ is the easiest way as IntelliJ project files are also included here.
 
 
