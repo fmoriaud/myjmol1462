@@ -66,7 +66,11 @@ implements ActionListener
 
 		getSize(currentSize);
 		g.getClipBounds(rectClip);
-		viewer.renderScreenImage(g, currentSize, rectClip);
+		try {
+			viewer.renderScreenImage(g, currentSize.width, currentSize.height);
+		} catch (Exception e){
+
+		}
 	}
 
 	public void evalString(String rasmolScript){
