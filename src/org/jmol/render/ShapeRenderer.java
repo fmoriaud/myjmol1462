@@ -71,7 +71,12 @@ public abstract class ShapeRenderer {
 
   public boolean renderShape(JmolRendererInterface g3d, ModelSet modelSet, Shape shape) {
     setup(g3d, modelSet, shape);
-    boolean needsTranslucent = render();
+    boolean needsTranslucent =false;
+    try {
+      needsTranslucent = render();
+    } catch (Exception e){
+
+    }
     exportType = GData.EXPORT_NOT;
     isExport = false;
     return needsTranslucent;
