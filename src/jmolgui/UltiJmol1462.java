@@ -151,6 +151,9 @@ public class UltiJmol1462 {
         contentPane.add(vBox);
         frame.pack();
         frame.setVisible(true);
+
+        // memory savings
+        jmolPanel.evalString("set undo OFF");
     }
 
 
